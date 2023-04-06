@@ -148,8 +148,8 @@ public class CountryTest {
                         .pathParam("countryID", countryID)
 
                         .when()
-                        //.delete("school-service/api/countries/{countryID}")
-                        .delete("school-service/api/countries/")
+                        .delete("school-service/api/countries/{countryID}")
+                        //.delete("school-service/api/countries/")
                         .then()
                         .log().body()
                         .statusCode(200)
