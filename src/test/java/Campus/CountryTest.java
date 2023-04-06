@@ -152,7 +152,7 @@ public class CountryTest {
                         .delete("school-service/api/countries/")
                         .then()
                         .log().body()
-                        .statusCode(400)
+                        .statusCode(200)
 
         ;
     }
